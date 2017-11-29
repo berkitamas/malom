@@ -2,9 +2,9 @@
  * @file		main_menu.c
  * @author		Berki Tamás - PDRE31
  * @date		2017. 11. 01.
- * 
+ *
  * @image 		html main_menu.png "Főmenü" width=100%
- * 
+ *
  */
 #include <stdio.h>
 #include <stdbool.h>

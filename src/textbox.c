@@ -2,10 +2,10 @@
  * @file		textbox.c
  * @author		Berki Tamás - PDRE31
  * @date		2017. 11. 01.
- * 
+ *
  * @image 		html textbox.png "Szövegdoboz" width=200px
  * @image 		html textbox_error.png "Szövegdoboz hibánál" width=200px
- * 
+ *
  */
 
 #include <stdbool.h>
@@ -130,4 +130,9 @@ void draw_textbox(char *str, int row)
 
 	strcat(str, output);
 	free(output);
+}
+
+void textbox_free() {
+	free(textbox_msg);
+	textbox_msg = NULL;
 }

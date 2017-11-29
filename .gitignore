@@ -110,4 +110,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 bin
-html/
+docs/

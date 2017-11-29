@@ -2,9 +2,9 @@
  * @file		splash.c
  * @author		Berki Tamás - PDRE31
  * @date		2017. 11. 01.
- * 
+ *
  * @image 		html splash.png "Kezdőképernyő" width=100%
- * 
+ *
  */
 
 #include <stdio.h>

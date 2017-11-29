@@ -2,9 +2,9 @@
  * @file		pause_menu.c
  * @author		Berki Tamás - PDRE31
  * @date		2017. 11. 04.
- * 
+ *
  * @image 		html pause_menu.png "Szünet menü" width=100%
- * 
+ *
  */
 #include <stdio.h>
 #include <stdbool.h>

@@ -2,9 +2,9 @@
  * @file		board.c
  * @author		Berki Tamás - PDRE31
  * @date		2017. 11. 01.
- * 
+ *
  * @image 		html board.png "Tábla" width=100%
- * 
+ *
  */
 
 #include <stdio.h>
@@ -54,6 +54,7 @@ void board_update(input_t input, bool *running)
 	if (board.paused) {
 		//Enter esetében kilép
 		if (input == INPUT_ENTER) {
+            textbox_free();
 			*running = false;
 			game_prev_view();
 		//Cancel esetében visszatér a játékhoz
@@ -267,6 +268,7 @@ void board_check_win(bool *running)
 		if (count_pieces_with_status(P_P2) < 3) {
 			board.win = true;
 			board.winner = PLAYER_1;
+            textbox_free();
 			*running = false;
 			return;
 		}
@@ -274,6 +276,7 @@ void board_check_win(bool *running)
 		if (!move_p2) {
 			board.win = true;
 			board.winner = PLAYER_1;
+            textbox_free();
 			*running = false;
 			return;
 		}
@@ -282,6 +285,7 @@ void board_check_win(bool *running)
 		if (count_pieces_with_status(P_P1) < 3) {
 			board.win = true;
 			board.winner = PLAYER_2;
+            textbox_free();
 			*running = false;
 			return;
 		}
@@ -289,6 +293,7 @@ void board_check_win(bool *running)
 		if (!move_p1) {
 			board.win = true;
 			board.winner = PLAYER_2;
+            textbox_free();
 			*running = false;
 			return;
 		}

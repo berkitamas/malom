@@ -2,9 +2,9 @@
  * @file		winner_view.c
  * @author		Berki Tamás - PDRE31
  * @date		2017. 11. 05.
- * 
+ *
  * @image 		html winner_view.png "Győztes képernyő" width=100%
- * 
+ *
  */
 
 #include <stdio.h>

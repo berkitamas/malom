@@ -49,4 +49,9 @@ void set_textbox_msg(char *msg);
  */
 void set_textbox_error(char *msg);
 
+
+/**
+ * @brief      Felszabadítja a textbox által lefoglalt helyet.
+ */
+void textbox_free();
 #endif
